@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap");
 
 * {
     margin: 0;
@@ -8,7 +8,7 @@
 }
 
 :root {
-    --color-1: #424b29; 
+    --color-1: #424b29;
     --color-2: #ebeed9;
     --color-3: #bec98d;
 }
@@ -19,7 +19,7 @@ a {
 }
 
 .bg {
-    background: linear-gradient(180deg, rgba(190,201,141,1) 0%, rgba(94,103,63,1) 95%);
+    background: linear-gradient(180deg, rgba(190, 201, 141, 1) 0%, rgba(94, 103, 63, 1) 95%);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: calc(100vh);
@@ -52,7 +52,7 @@ a {
 }
 
 .logo {
-    width: 15vmax;
+    width: 12vmax;
     margin: auto;
 }
 
@@ -74,8 +74,32 @@ p {
     font-weight: 700;
 }
 
-/* media queries */
+.size {
+    font-size: 13px;
+}
 
-@media(max-width: 1200px){ 
+.nowrap {
+    white-space: nowrap;
+}
 
+/* Media queries */
+
+@media(min-width: 1200px) {
+    .logo {
+        width: 15vmin;
+        margin: auto;
+    }
+
+    .button {
+        padding: 4px 75px;
+        border: 2px solid var(--color-2);
+        background-color: var(--color-2);
+        border-radius: 7px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .size {
+        font-size: 15px;
+    }
 }
